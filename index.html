@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <script src="lib/anime.min.js"></script>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, ,maximum-scale=1">
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
@@ -18,45 +19,49 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translateX(-50%) translateY(-50%);
+        transform: translateX(-50%) translateY(-10%);
         color: #ffffff;
-        font-size: 90px;
+        font-size: 50px;
         border: 1px solid #ccc;
         padding: 0px 5px 0px 5px;
     }
     .ucapan{
         text-align: center;
         color: #ffffff;
-        font-size: 30px;
+        font-size: 50px;
+
     }
     .credit {
         text-align: justify-left;
         color: #ffffff;
         font-size: 10px;
+
     }
-    
-    </style>
-
-    <style type="text/css">
-
     .song {
-        color: white;
-        border-style: solid;
-        border-color: white;
-        background-color: #000;
         position: absolute;
-        top: 15%;
-        left: 46%;
+        top: 0%;
+        left: 20%;
     }
-
+    .song2 {
+        position: absolute;
+        top: 0%;
+        left: 50%;
+    }
+    .bonus {
+        position: relative;
+    }
     </style>
+
+
 
     
 
 </head>
 <body>
-<div class="container-md">
-    <button class="song" button onclick="playAudio()" type="button">Mainkan Musik</button>
+<div class="container">
+    <button class="btn btn-primary song" button onclick="playAudio()" type="button">Mainkan Musik</button>
+    <button class="btn btn-danger song song2" button onclick="pauseAudio()" type="button">Hentikan Musik</button>
+    <a class="btn btn-warning bonus" href="https://1.bp.blogspot.com/-3xSiY4l8Nq4/WGyU2_wZCgI/AAAAAAAABYg/9ELdQSp6YyoUFyrx7F6wF2i82_KK0ce2gCLcB/s1600/monkey3.jpg" role="button">Bonus</a>
 	<audio id="song">
         <source src="tidur.ogg" type="audio/ogg">
         <source src="tidur.mp3" type="audio/mpeg">
@@ -68,15 +73,20 @@
         var x = document.getElementById("song"); 
     
         function playAudio() { 
-            x.play(); 
+            x.play();
         }
-    
-        </script>
+
+        function pauseAudio() {
+            x.pause();
+        }
+
+    </script>
 
     <div id="Ucapan" class="ucapan"
-    <h1>Selamat Tidur Eka :)</h1>
+    <h1>Tidur Cok! Jangan Begadang!</h1>
     <div id="credit" class="credit"
     <p>Created by AlfianArya</p>
+    <h6>Play musiknya cok, biar nyenyak tidurnya</h6>
 
     
 
