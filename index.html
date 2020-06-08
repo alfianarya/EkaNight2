@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <script src="lib/anime.min.js"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, ,maximum-scale=1">
     <!-- Required meta tags -->
@@ -13,17 +12,19 @@
     <title>My Clock Display</title>
     <style type="text/css">
     body{
-        background: #000000;
+        background: #420225;
+        
     }
     .clock{
         position: absolute;
-        top: 50%;
+        top: 45%;
         left: 50%;
         transform: translateX(-50%) translateY(-10%);
         color: #ffffff;
+        text-align: justify;
         font-size: 50px;
         border: 1px solid #ccc;
-        padding: 0px 5px 0px 5px;
+        padding: 0px 7px 0px 7px;
     }
     .ucapan{
         text-align: center;
@@ -32,15 +33,16 @@
 
     }
     .credit {
-        text-align: justify-left;
+        
+        text-align: center;
         color: #ffffff;
-        font-size: 10px;
+        font-size: 20px;
 
     }
     .song {
         position: absolute;
         top: 0%;
-        left: 25%;
+        left: 24.2%;
     }
     .song2 {
         position: right;
@@ -48,7 +50,9 @@
         left: 62%;
     }
     .bonus {
-        position: relative;
+        position: left;
+        top: 0%;
+        left: 0%;
     }
     </style>
 
@@ -82,11 +86,12 @@
 
     </script>
 
-    <div id="Ucapan" class="ucapan"
-    <h1>Tidur Cok! Jangan Begadang!</h1>
-    <div id="credit" class="credit"
-    <p>Created by AlfianArya</p>
-    <h6>Play musiknya cok, biar nyenyak tidurnya</h6>
+    <div id="Ucapan" class="ucapan">
+    <h1>Tidur Cok! Jangan Begadang!</h1></div><br>
+    <div id="credit" class="credit">
+    <span class="badge badge-light">Created by AlfianArya</span><br>
+    <h6 class="badge badge-pill badge-dark" role="alert">Play musiknya cok, biar nyenyak tidurnya</h6><br>
+    <h6 class="badge badge-pill badge-info" role="alert">Jangan lupa buka bonusnya</h6></div>
 
     
 
